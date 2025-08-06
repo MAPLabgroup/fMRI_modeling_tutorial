@@ -1,0 +1,13 @@
+To do this tutorial:
+
+Part 1: read through all the pages/watch the videos on Andy's Brain blog.
+https://andysbrainbook.readthedocs.io/en/latest/fMRI_Short_Course/fMRI_05_1stLevelAnalysis.html
+
+Part 2: One his blog, chapter 5 (https://andysbrainbook.readthedocs.io/en/latest/fMRI_Short_Course/Statistics/05_Creating_Timing_Files.html) is how to make what is commonly referred to as an "onset" or "model" file. He gives examples, but they are based around his own pipeline. They work fine, and will for you too, but INSTEAD, you should proceed to our in-lab tutorial resources.
+
+In "Before_you_start" read the background paper - "PART2_Evidencefor...pdf"
+Pay particular attention to the design of the study - how the trials are structured and named.
+Then, under "PART2_NECOS_study" you will find example scripts
+- "necos_behaviorcalc_tutorial" and companion script "seek_str" which will allow you to do what Andy describes in his Chapter 5: building a model file unique to your study and its goals.
+
+A small note: in his Chapter 3, he discusses a stick or Gamma Distribution for modeling the HRF, and also an elongated version called a "Boxcar" function. In our tutorial, this is controlled by the "durations" entry in the modeling script - a duration of 0s = an impulse, while a duration >0s is a so-called "boxcar" function in his reading, and essentially just means you predict/model a BOLD response to a neural event that lasted a longer amount of time as opposed to a quick burst of neural activity
